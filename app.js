@@ -2,7 +2,6 @@ import express from 'express';
 import axios from 'axios';
 import opencage from 'opencage-api-client';
 import cors from 'cors';
-import fetch from 'node-fetch';
 
 const app = express();
 const port = process.env.PORT || 3000;
