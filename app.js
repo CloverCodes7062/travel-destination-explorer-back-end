@@ -149,8 +149,11 @@ app.get('/getLocationThingsToDo', async (req, res) => {
         console.log('LOCATION: ', location);
         const getLocationDescUrl = `https://api.content.tripadvisor.com/api/v1/location/${location.location_id}/details?key=${tripadvisorAPIKey}&language=en&currency=USD`;
         const locationDescAndUrl = (await (axios.get(getLocationDescUrl, { headers }))).data;
+        console.log('locationDescAndUrl: ', locationDescAndUrl);
         const locationDesc = locationDescAndUrl.description;
+        console.log('locationDesc: ', locationDesc);
         const locationUrl = locationDescAndUrl.web_url;
+        console.log('locationUrl: ', locationUrl);
 
         if (index != 0) {
             try {
