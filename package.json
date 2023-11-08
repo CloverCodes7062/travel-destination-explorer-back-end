@@ -5,6 +5,7 @@
   "repository": "https://github.com/CloverCodes7062/travel-destination-explorer-back-end.git",
   "author": "Stacy McCarrell <clovercodes7062@gmail.com>",
   "license": "MIT",
+  "type": "module",
   "dependencies": {
     "axios": "^1.6.0",
     "cors": "^2.8.5",
