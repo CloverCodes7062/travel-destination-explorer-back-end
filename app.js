@@ -276,7 +276,7 @@ app.get('/getFeaturedCountries', async (req, res) => {
     const featured1 = 
     { 
         country_name: r1.name.common, 
-        country_capital: r1.capital, 
+        country_capital: r1.capital[0], 
         country_flag: r1.flag,
         country_desc: allCountries[`${r1.capital}, ${r1.name.common}`]
     };
@@ -290,7 +290,7 @@ app.get('/getFeaturedCountries', async (req, res) => {
     const featured3 = 
     { 
         country_name: r3.name.common, 
-        country_capital: r3.capital, 
+        country_capital: r3.capital[0], 
         country_flag: r3.flag,
         country_desc: allCountries[`${r3.capital}, ${r3.name.common}`]
     };
